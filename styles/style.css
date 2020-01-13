@@ -1,0 +1,68 @@
+:root {
+  --header-height: 58px;
+}
+
+body {
+  background: #c5c5c52a;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  background: #ffffff;
+
+  width: 100%;
+  font-size: large;
+  /* font-family: Verdana, Arial, Helvetica, sans-serif;  */
+}
+
+main {
+  clear: both;
+  position: relative;
+  margin-top: var(--header-height);
+}
+
+nav {
+  flex-wrap: wrap;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+menu {
+  margin: 0;
+}
+
+ul {
+  padding-left: 10px;
+  width: 100%;
+}
+
+li {
+  padding: 0px 5px;
+}
+
+img {
+  width: 41px;
+  height: 55px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
