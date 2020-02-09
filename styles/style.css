@@ -1,6 +1,6 @@
 :root {
   --header-height: 58px;
-  --device-width: 1000px;
+  --device-width: 400px;
 }
 
 body {
@@ -68,7 +68,7 @@ li {
 
 .block-1 {
   background-image: url(../images/banner.png);
-  height: 1000px;
+  height: var(--device-width);
   color: aliceblue;
 
   display: flex;
