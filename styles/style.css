@@ -1,5 +1,6 @@
 :root {
   --header-height: 58px;
+  --device-width: 1000px;
 }
 
 body {
@@ -8,12 +9,12 @@ body {
 
   display: flex;
   flex-direction: column;
-
 }
 
 header {
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   flex-direction: row;
   background: #ffffff;
 
@@ -25,7 +26,6 @@ header {
 main {
   clear: both;
   position: relative;
-  margin-top: var(--header-height);
 }
 
 nav {
@@ -49,9 +49,8 @@ li {
   padding: 0px 5px;
 }
 
-img {
-  width: 41px;
-  height: 55px;
+.device-width {
+  width: var(--device-width);
 }
 
 .flex {
@@ -65,4 +64,26 @@ img {
 
 .flex-reverse {
   flex-direction: row-reverse;
+}
+
+.block-1 {
+  background-image: url(../images/banner.png);
+  height: 1000px;
+  color: aliceblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.block-1 button {
+  color: aliceblue;
+  border-style: double;
+  background-color: inherit;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 7px 10px 7px;
+}
+.block-1 h1 {
+  margin: 0px;
 }
