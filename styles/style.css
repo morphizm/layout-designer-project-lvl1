@@ -68,6 +68,7 @@ li {
 
 .block-1 {
   background-image: url(../images/banner.png);
+  background-position: center;
   height: var(--device-width);
   color: aliceblue;
 
