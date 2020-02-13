@@ -87,3 +87,40 @@ li {
 .block-1 h1 {
   margin: 0px;
 }
+
+.w-1000 {
+  width: 1000px;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+
+.card {
+  align-self: flex-start;
+  padding: 2px;
+  margin: 2px;
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+.card h2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.moon-1 {
+  width: 300px;
+  height: 200px;
+}
