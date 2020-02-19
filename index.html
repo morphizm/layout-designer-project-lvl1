@@ -34,7 +34,49 @@
         <img src="./images/logo.svg" alt="logo" width="200" height="233">
         <h1>ЖК «Лунное море»</h1>
         <p>Место, откуда не хочется улетать</p>
-        <button role="button" type="submit">Забронировать</button>
+        <button class="simple-button white p-10-7" role="button" type="submit">Забронировать</button>
+      </div>
+    </section>
+    <section>
+      <div class="form">
+        <h1>Оставьте заявку сегодня!</h1>
+        <form class="my-form">
+          <fieldset class="border-green">
+            <legend class="green">Параметры квартиры</legend>
+            <div class="form-element">
+              <label>Количество комнат:</label>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <label>Отделка:</label>
+              <select>
+                <option value="1">Без отделки</option>
+                <option value="2">Отделка №1</option>
+                <option value="3">Отделка №2</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="border-green">
+            <legend class="green">Контактная информация</legend>
+            <div class="form-element">
+              <label>Имя:</label>
+              <input>
+            </div>
+            <div class="form-element">
+              <label>Телефон:</label>
+              <input>
+            </div>
+            <div class="form-element">
+              <label>E-mail:</label>
+              <input>
+            </div>
+          </fieldset>
+          <button class="simple-button green" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
     <section class="flex flex-center">

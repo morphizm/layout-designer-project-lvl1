@@ -4,11 +4,14 @@
 }
 
 body {
-  background: #c5c5c52a;
   margin: 0;
 
   display: flex;
   flex-direction: column;
+}
+
+section {
+  margin-bottom: 25px;
 }
 
 header {
@@ -20,7 +23,6 @@ header {
 
   width: 100%;
   font-size: large;
-  /* font-family: Verdana, Arial, Helvetica, sans-serif;  */
 }
 
 main {
@@ -77,14 +79,15 @@ li {
   justify-content: center;
   flex-direction: column;
 }
-.block-1 button {
+
+.white {
   color: aliceblue;
-  border-style: double;
-  background-color: inherit;
-  border-radius: 5px;
-  font-size: 16px;
+}
+
+.p-10-7 {
   padding: 10px 7px 10px 7px;
 }
+
 .block-1 h1 {
   margin: 0px;
 }
@@ -124,4 +127,62 @@ li {
 .moon-1 {
   width: 300px;
   height: 200px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.green {
+  color: aquamarine;
+  border-color: aquamarine;
+}
+
+.border-green {
+  border-color: aquamarine;
+}
+
+.my-form {
+  width: 400px;
+
+  padding-top: 5px;
+
+  font-size: small;
+
+}
+
+.my-form div {
+  padding: 5px;
+}
+
+.my-form fieldset {
+  margin-bottom: 15px;
+  font-size: larger !important;
+}
+
+.simple-button {
+  border-style: double;
+  background-color: inherit;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 7px 17px 7px 17px;
+}
+
+.form-element {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form-element input {
+  max-width: 150px;
+  width: 150px;
+}
+
+.form-element select {
+  max-width: 150px;
+  width: 150px;
 }
