@@ -5,41 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ЖК "Лунное море" morph</title>
-
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
     <nav class="flex">
       <div class="flex">
-        <img src="./images/logo.svg" alt="logo" width="41" height="55">
-        <ul class="flex" type="none">
-          <li class="flex-grow-1">Лунное море</li>
-        </ul>
-
+        <a href="#main"><img src="./images/logo.svg" alt="logo" width="41" height="55"></a>
+        <a href="#main">Лунное море</a>
       </div>
       <menu class="flex-grow-1">
-        <ul class="flex flex-reverse" type="none">
-          <li>Места для отдыха</li>
-          <li>О ЖК</li>
-          <li>Преимущества</li>
-        </ul>
+        <div class="flex flex-reverse">
+          <a href="#places">Места для отдыха</a>
+          <a href="#about">О ЖК</a>
+          <a href="#advantages">Преимущества</a>
+          </div>
       </menu>
     </nav>
   </header>
-
-  <main>
-    <section>
-      <div class="block-1">
-        <img src="./images/logo.svg" alt="logo" width="200" height="233">
-        <h1>ЖК «Лунное море»</h1>
-        <p>Место, откуда не хочется улетать</p>
-        <button class="simple-button white p-10-7" role="button" type="submit">Забронировать</button>
-      </div>
+  <main id="main">
+    <section class="welcome m-0">
+      <img src="./images/logo.svg" alt="logo" width="190" height="220">
+      <h1>ЖК «Лунное море»</h1>
+      <p>Место, откуда не хочется улетать</p>
+      <a href="#to-book"><button class="simple-button white p-10-7" type="submit">Забронировать</button></a>
     </section>
-    <section>
+    <section id="to-book">
       <div class="form">
-        <h1>Оставьте заявку сегодня!</h1>
+        <h2>Оставьте заявку сегодня!</h2>
         <form class="my-form">
           <fieldset class="border-green">
             <legend class="green">Параметры квартиры</legend>
@@ -79,21 +72,21 @@
         </form>
       </div>
     </section>
-    <section class="flex flex-center">
-      <div class="flex w-1000">
-        <div class="card">
+    <section class="flex flex-center" id="advantages">
+      <div class="flex w-1000 justify-space-between flex-start">
+        <div class="card-small">
           <h2>Уникальный вид</h2>
           <p>
             Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.
           </p>
         </div>
-        <div class="card">
+        <div class="card-small">
           <h2>Инфраструктура</h2>
           <p>
             Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
           </p>
         </div>
-        <div class="card">
+        <div class="card-small">
           <h2>Близость к Москве</h2>
           <p>
             При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
@@ -101,9 +94,9 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-center">
-      <div class="flex w-1000">
-        <div class="card flex flex-column">
+    <section class="flex flex-center" id="about">
+      <div class="flex w-1000 justify-space-around">
+        <div class="card flex flex-column align-items-start">
           <h2>О ЖК «Лунное море»</h2>
           <p>
             Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
@@ -114,11 +107,10 @@
         <img src="images/moon-1.jpg" class="moon-1">
       </div>
     </section>
-
-    <section class="flex flex-center">
-      <div class="flex w-1000">
+    <section class="flex flex-center" id="places">
+      <div class="flex w-1000 justify-space-around">
         <img src="images/moon-2.jpg" class="moon-1">
-        <div class="card flex flex-column">
+        <div class="card flex flex-column align-items-start">
           <h2>Места для отдыха</h2>
           <p>
             Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
