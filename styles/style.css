@@ -64,11 +64,11 @@ button {
   cursor: pointer;
 }
 
-menu {
+.menu {
   margin: 0;
 }
 
-menu a {
+.menu a {
   margin-left: 20px;
 }
 
@@ -274,8 +274,11 @@ footer ul {
   border-style: double;
   background-color: inherit;
   border-radius: 5px;
-  font-size: 16px;
+  border: 2px solid;
+  font-size: 18px;
   padding: 7px 17px 7px 17px;
+
+  text-decoration: none;
 }
 
 .form-element {
