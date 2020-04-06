@@ -23,6 +23,7 @@ header {
 
   width: 100%;
   font-size: large;
+  z-index: 1000;
 }
 
 main {
@@ -49,6 +50,24 @@ ul {
 
 li {
   padding: 0px 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  color: white;
+  background: #303846;
+}
+footer p {
+  padding-left: 5px;
+}
+footer > div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+footer ul {
+  margin-left: 40px;
 }
 
 .device-width {
@@ -111,7 +130,6 @@ li {
 .flex-column {
   flex-direction: column;
 }
-
 
 .card {
   align-self: flex-start;
@@ -185,4 +203,12 @@ li {
 .form-element select {
   max-width: 150px;
   width: 150px;
+}
+
+.text-medium {
+  font-size: 18px;
+  font-weight: 500;
+}
+.text-small {
+  font-size: 14px;
 }
