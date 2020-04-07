@@ -1,6 +1,7 @@
 :root {
   --header-height: 58px;
   --device-width: 400px;
+  --content-width: 1000px;
 }
 
 body {
@@ -10,6 +11,10 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  color: #303846;
+  font-size: 16px;
 }
 
 section {
@@ -154,8 +159,8 @@ footer ul {
   margin: 0px;
 }
 
-.w-1000 {
-  width: 1000px;
+.content-width {
+  width: var(--content-width);
 }
 
 .flex-center {
@@ -219,7 +224,7 @@ footer ul {
 }
 
 #to-book {
-  margin-top: 0;
+  margin: 0;
   padding-top: 10px;
   background: #f7f7f7;
 
@@ -244,6 +249,10 @@ footer ul {
 }
 
 .green {
+  color: green;
+}
+
+.aquamarine {
   color: aquamarine;
   border-color: aquamarine;
 }
@@ -284,7 +293,12 @@ footer ul {
 .form-element {
   display: flex;
   justify-content: space-between;
+  height: 25px;
+}
 
+fieldset div {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .form-element input {
@@ -294,15 +308,18 @@ footer ul {
 
   border: 1px solid #ebebeb;
   border-radius: 5px;
+  background-color: #ffffff;
+  padding: 5px;
 }
 
 .form-element select {
   max-width: 150px;
   width: 125px;
 
-  margin-right: 30px;
+  margin-right: 35px;
   border-radius: 5px;
   line-height: 30px;
+  background-color: #ffffff;
 }
 
 .text-medium {
