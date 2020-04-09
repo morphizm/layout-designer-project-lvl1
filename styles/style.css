@@ -16,57 +16,32 @@ body {
   color: #303846;
 }
 
+.device-width {
+  width: var(--device-width);
+}
+
+.content-width {
+  width: var(--content-width);
+}
+
 section {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  margin: 25px 0;
+  padding: 25px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header {
-  background: #ffffff;
-
-  width: 100%;
-  font-size: large;
-}
-
-nav a {
-  margin-left: 10px;
-}
-
-.link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.black {
-  color: black;
-}
-
-a:visited {
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-.menu {
-  margin: 0;
-  padding-right: 10px;
-}
-
-.menu a {
-  margin-left: 20px;
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--content-width);
 }
 
 h1 {
+  margin: 0;
   font-size: 40px;
 }
 
@@ -79,43 +54,70 @@ li {
   padding: 0px 5px;
 }
 
-footer p {
-  padding-left: 5px;
+nav a {
+  margin-left: 10px;
 }
 
-footer > div {
-  margin-top: 50px;
-  margin-bottom: 50px;
+a:visited {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+footer p {
+  padding-left: 5px;
 }
 
 footer ul {
   margin-left: 40px;
 }
 
-.device-width {
-  width: var(--device-width);
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.content-width {
-  width: var(--content-width);
+.header {
+  width: 100%;
+  font-size: large;
+  background: #ffffff;
+}
+
+.medium-img {
+  width: 300px;
+  height: 200px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.menu a {
+  margin-left: 20px;
 }
 
 .welcome {
-  background-image: url(../images/banner.png);
-  background-position: center;
-
-  padding-top: 25px;
   padding-bottom: 40px;
-}
-
-.welcome h1 {
-  margin: 0px;
+  padding-top: 25px;
+  
+  background-position: center;
+  background-image: url(../images/banner.png);
 }
 
 .welcome p {
-  font-weight: 600;
   margin-top: 0;
-  padding-bottom: 15px;
+  margin-bottom: 25px;
+
+  font-weight: 600;
 }
 
 .d-flex {
@@ -146,10 +148,6 @@ footer ul {
   justify-content: space-around;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-space-evenly {
   justify-content: space-evenly;
 }
@@ -167,9 +165,9 @@ footer ul {
 }
 
 .card {
-  flex-basis: 500px;
   padding: 2px;
   margin: 2px;
+  flex-basis: 500px;
   font-size: 17px;
 }
 
@@ -191,36 +189,25 @@ footer ul {
   margin-top: 5px;
 }
 
-.medium-img {
-  width: 300px;
-  height: 200px;
+.btn {
+  padding: 7px 17px;
+  font-size: 18px;
+  text-decoration: none;
+
+  border-style: double;
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: inherit;
 }
 
-.green {
-  color: green;
-}
-
-.white {
-  color: aliceblue;
-}
-
-.back-smoky-white {
-  background: #f7f7f7;  
-}
-
-.back-green-black {
-  background: #303846;
-}
-
-.border-green {
+.btn-aquamarine {
+  color: aquamarine;
   border-color: aquamarine;
 }
 
 .form {
-  width: 400px;
-
   padding-top: 5px;
-
+  width: 400px;
   font-size: small;
 }
 
@@ -231,21 +218,6 @@ footer ul {
 .form fieldset {
   margin-bottom: 15px;
   font-size: larger;
-}
-
-.btn {
-  border-style: double;
-  border-radius: 5px;
-  border: 2px solid;
-  font-size: 18px;
-  padding: 7px 17px 7px 17px;
-  text-decoration: none;
-  background-color: inherit;
-}
-
-.btn-aquamarine {
-  color: aquamarine;
-  border-color: aquamarine;
 }
 
 .form-element {
@@ -260,6 +232,7 @@ fieldset div {
 }
 
 .form-element input {
+  padding: 5px;
   max-width: 150px;
   width: 150px;
   height: 15px;
@@ -267,17 +240,40 @@ fieldset div {
   border: 1px solid #ebebeb;
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 5px;
 }
 
 .form-element select {
+  margin-right: 35px;
   max-width: 150px;
   width: 125px;
 
-  margin-right: 35px;
-  border-radius: 5px;
   line-height: 30px;
+  border-radius: 5px;
   background-color: #ffffff;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: aliceblue;
+}
+
+.back-smoky-white {
+  background: #f7f7f7;  
+}
+
+.back-green-black {
+  background: #303846;
+}
+
+.border-green {
+  border-color: aquamarine;
 }
 
 .text-medium {
@@ -305,10 +301,10 @@ fieldset div {
   margin-bottom: 0;
 }
 
-.pt-5 {
-  padding-top: 5px;
+.mt-50 {
+  margin-top: 50px;
 }
 
-.p-10-7 {
-  padding: 10px 7px 10px 7px;
+.mb-50 {
+  margin-bottom: 50px;
 }
