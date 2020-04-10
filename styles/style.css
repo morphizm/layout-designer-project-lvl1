@@ -33,7 +33,7 @@ section {
   align-items: center;
 }
 
-section > div {
+.content-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,18 +106,11 @@ footer ul {
 }
 
 .welcome {
-  padding-bottom: 40px;
-  padding-top: 25px;
+  margin-top: 0;
+  padding: 25px 0 40px;
   
   background-position: center;
   background-image: url(../images/banner.png);
-}
-
-.welcome p {
-  margin-top: 0;
-  margin-bottom: 25px;
-
-  font-weight: 600;
 }
 
 .d-flex {
@@ -172,8 +165,7 @@ footer ul {
 }
 
 .card h2 {
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 5px inherit 0;
 }
 
 .card-small {
@@ -227,8 +219,7 @@ footer ul {
 }
 
 fieldset div {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px inherit 5px;
 }
 
 .form-element input {
@@ -285,6 +276,14 @@ fieldset div {
   font-size: 14px;
 }
 
+.size-30 {
+  font-size: 30px;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -293,12 +292,16 @@ fieldset div {
   padding-top: 10px;
 }
 
-.size-30 {
-  font-size: 30px;
+.mt-0 {
+  margin-top: 0;
 }
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
 }
 
 .mt-50 {
